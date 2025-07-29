@@ -31,6 +31,13 @@ function Home() {
           <h2 className="font-bold capitalize text-lg">{pokemon.name}</h2>
           <img src={pokemon.sprites.front_default} alt={pokemon.name} className="mx-auto w-20 h-20" />
           <p>N° {pokemon.id}</p>
+          <div className="mt-2">
+            {pokemon.types.map((typeInfo) => (
+              <span key={typeInfo.slot} className="text-sm bg-gray-200 rounded px-2 py-1 mx-1">
+                {typeInfo.type.name}
+              </span>
+            ))}
+          </div>
         </div>
       ))}
     </div>
