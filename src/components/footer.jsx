@@ -3,7 +3,6 @@ import { FaFacebookF, FaYoutube, FaTwitter, FaInstagram } from "react-icons/fa";
 export default function Footer() {
   return (
     <footer className="bg-black text-white px-6 py-10 text-sm">
-      {/* Section inscription */}
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8">
         <div>
           <h2 className="text-lg font-bold mb-4">
@@ -41,7 +40,6 @@ export default function Footer() {
           </button>
         </div>
 
-        {/* Section liens & réseaux */}
         <div className="grid grid-cols-2 gap-6">
           <div>
             <h3 className="font-semibold mb-2">The Pokémon Company</h3>
@@ -56,7 +54,6 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-col justify-between">
-            {/* Réseaux sociaux */}
             <div className="flex gap-4 mb-4">
               <a href="#" className="text-xl"><FaFacebookF /></a>
               <a href="#" className="text-xl"><FaYoutube /></a>
@@ -64,7 +61,6 @@ export default function Footer() {
               <a href="#" className="text-xl"><FaInstagram /></a>
             </div>
 
-            {/* Badge CARU */}
             <div>
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/CARU_Safe_Harbor_Seal.png/200px-CARU_Safe_Harbor_Seal.png"
@@ -76,7 +72,6 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Mention légale bas de page */}
       <div className="max-w-7xl mx-auto mt-10 border-t border-gray-700 pt-4 flex flex-col md:flex-row justify-between text-xs gap-4">
         <div className="space-x-4">
           <a href="#" className="hover:underline">Conditions d'utilisation</a>

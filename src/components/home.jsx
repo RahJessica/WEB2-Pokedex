@@ -27,7 +27,7 @@ function Home({searchTerm}) {
 
   useEffect(() => {
     async function loadPokemons() {
-      const res = await fetch('https://pokeapi.co/api/v2/pokemon?limit=20');
+      const res = await fetch('https://pokeapi.co/api/v2/pokemon?limit=40');
       const data = await res.json();
 
       const detailedPokemons = await Promise.all(
@@ -54,7 +54,7 @@ const filteredPokemons = pokemonList.filter((pokemon) =>
    return (
     <>
 
-    <div className="p-4 grid grid-cols-2 md:grid-cols-4 gap-4 mx-40 my-20">
+    <div className="p-4 grid grid-cols-2 md:grid-cols-4 gap-4 mx-40 my-20]">
       {filteredPokemons.map((pokemon) => (
         <div key={pokemon.id} className="bg-white rounded-xl shadow p-4 text-center border border-gray-300 cursor-pointer transform transition duration-300 hover:scale-104">
           <h2 className="font-bold capitalize text-lg">{pokemon.name}</h2>

@@ -3,6 +3,7 @@ import './App.css'
 import Home from './components/home'
 import NavBar from './components/navbar';
 import SearchBar from './components/searchBar';
+import Footer from './components/Footer';
 
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -11,6 +12,7 @@ function App() {
       <NavBar/>
       <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       <Home searchTerm={searchTerm} />
+      <Footer/>
     </div>
   );
 }
