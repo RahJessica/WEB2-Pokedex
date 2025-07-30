@@ -2,7 +2,7 @@ import { Fragment, useEffect, useState } from 'react';
 
 function SearchBar({ searchTerm, setSearchTerm }) {
     return (
-        <div className='flex flex-row gap-10 mt-20 px-10 justify-center bg-gray-700 text-white py-10'>
+        <div className='flex flex-row gap-10 px-10 justify-center bg-gray-700 text-white py-10'>
             <h2 className='font-bold text-2xl'>Rechercher un Pokémon :</h2>
             <input
                 type="text"
