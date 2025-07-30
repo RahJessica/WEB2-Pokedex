@@ -2,7 +2,7 @@ import { FaFacebookF, FaYoutube, FaTwitter, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white px-6 py-10 text-sm">
+    <footer className="bg-gray-900 text-white px-6 py-10 text-sm">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8">
         <div>
           <h2 className="text-lg font-bold mb-4">
@@ -12,9 +12,9 @@ export default function Footer() {
             <input
               type="email"
               placeholder="E-mail"
-              className="p-2 rounded w-full md:w-1/2 text-black"
+              className="p-2 rounded w-full md:w-1/2 text-white border border-white"
             />
-            <select className="p-2 rounded w-full md:w-1/4 text-black">
+            <select className="p-2 rounded w-full md:w-1/4 text-white border border-white">
               <option>France</option>
               <option>Madagascar</option>
               <option>Canada</option>
@@ -22,7 +22,7 @@ export default function Footer() {
             <input
               type="text"
               placeholder="Anniversaire"
-              className="p-2 rounded w-full md:w-1/4 text-black"
+              className="p-2 rounded w-full md:w-1/4 text-white border border-white"
             />
           </div>
           <div className="flex flex-col gap-2 mb-4">
